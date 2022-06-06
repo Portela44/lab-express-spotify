@@ -1,9 +1,7 @@
 <div>
-    <h1>Albums for: {{release_date}}</h1>
+    <h1>Albums for selected artist: {{release_date}}</h1>
     {{#each items}}
-    {{#each images}}
-    <p>image: <img src="{{url}}" alt={{name}}></p>
-    {{/each}}
+    <p><img src="{{images.1.url}}" alt={{name}}></p>
     <h3>{{name}}</h3>
     <a href="/tracks/{{id}}" method="GET" name="albumId">View Tracks</a>
     {{/each}}

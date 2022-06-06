@@ -1,8 +1,9 @@
-<h1>Home Page</h1>
-<form action="/artist-search" method="GET">
-    <input type="text" name="artist"/>
-    <button type="submit">Search for an Artist</button>
-</form>
-{{#if error}}
-<p style="color: red">{{error}}</p>
-{{/if}}
+<div>
+    <form id="home" action="/artist-search" method="GET">
+        <input id="search-bar" type="text" name="artist"/>
+        <button type="submit">Search for an Artist</button>
+    </form>
+    {{#if error}}
+    <p style="color: red">{{error}}</p>
+    {{/if}}
+</div> 

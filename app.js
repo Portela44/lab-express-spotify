@@ -49,7 +49,6 @@ app.get("/albums/:artistId", (req, res, next) => {
         .getArtistAlbums(artistId)
         .then(data => {
             const response = data.body;
-            console.log("The received albums from the api: ", response);
             res.render("albums", response);
         })
         .catch(err => console.log("An error while searching the album occured: ", err));
@@ -61,7 +60,6 @@ app.get("/tracks/:albumId", (req, res, next) => {
         .getAlbumTracks(albumId)
         .then(data => {
             const response = data.body;
-            console.log("The received tracks from the api: ", response);
             res.render("tracks", response);
         })
         .catch(err => console.log("An error while searching the tracks occured: ", err));
