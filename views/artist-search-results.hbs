@@ -1,7 +1,7 @@
 <div id="artist-search-results">
     {{#each items}}
     <div >
-        <p><img src="{{images.1.url}}" alt={{name}}></p>
+        <p><img id="album-image" src="{{images.1.url}}" onerror="this.onerror.null; src='https://videos.toromedia.com/client/assets/images/default-avatar-video-channel.png'" alt="" width="192" height="192"></p>
         <h4>{{name}}</h4>
         <a href="/albums/{{id}}" method="GET" name="artistId">View Albums</a>  
     </div>

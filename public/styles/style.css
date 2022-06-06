@@ -5,6 +5,8 @@ body {
     background-image: url("/images/spotify-background.jpeg");
     background-size: 100%;
     background-repeat: no-repeat;
+    margin:0px;
+    font-family: sans-serif;
 }
 
 #home {
@@ -39,4 +41,46 @@ button {
 #artist-search-results {
     display:flex;
     flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    justify-content:space-around;
+    padding: 10px 0px;
+    background-color: white;
 }
+
+#artist-search-results > div {
+    margin:20px 2%;
+    width:192px;
+    height:270px;
+    background-color: darkgray;
+}
+
+#artist-search-results > div > h4 {
+    margin:0px;
+    font-size: 0.8em;
+    width:192px;
+    padding-bottom: 5px;
+}
+
+#artist-search-results > div > p {
+    margin:0px;
+    padding-bottom: 5px;
+}
+
+#artist-search-results > div > a {
+    background-color: lightcoral;
+    color: white;
+    padding: 5px 10px;
+    opacity: 1;
+    border-radius: 10%;
+    text-decoration: none;
+    font-size: 0.65em;
+}
+
+#album-image {
+    width:192px;
+    height:192px;
+    border-color: black;
+}
+
+/* album results page */
