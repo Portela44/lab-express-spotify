@@ -1,0 +1,10 @@
+<div>
+    <h1>Albums for: {{release_date}}</h1>
+    {{#each items}}
+    {{#each images}}
+    <p>image: <img src="{{url}}" alt={{name}}></p>
+    {{/each}}
+    <h3>{{name}}</h3>
+    <a href="/tracks/{{id}}" method="GET" name="albumId">View Tracks</a>
+    {{/each}}
+</div>

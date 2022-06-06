@@ -1,0 +1,14 @@
+<header>
+    <p>Title</p>
+    <p>Listen</p>
+</header>
+<ul>
+    {{#each items}}
+    <li>
+        {{name}}
+        <figure>
+            <audio controls src={{preview_url}}>Your browser does not support<code>audio</code>elements</audio>
+        </figure>
+    </li>
+    {{/each}}
+</ul>

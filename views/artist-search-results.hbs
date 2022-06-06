@@ -1,10 +1,11 @@
-<article>
+<div>
     {{#each items}}
     <h3>name: {{name}}</h3>
     {{#each images}}
     <p>image: <img src="{{url}}" alt={{name}}></p>
     {{/each}}
+    <a href="/albums/{{id}}" method="GET" name="artistId">View Albums</a>
     {{/each}}
-</article>
+</div>
 
 
