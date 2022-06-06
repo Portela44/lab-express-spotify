@@ -97,3 +97,50 @@ h1 {
 }
 
 /* track results page */
+
+.song-list {
+    background-color: white;
+}
+
+header {
+    display:flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+ul {
+    margin:0px;
+    flex-direction: column;
+    display:flex;
+    text-align: center;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+li {
+    display:flex;
+    align-content:center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E5DFDD;
+    margin:5px;
+    height:80px;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+header > p {
+    background-color: #423E3D;
+    color:darkgray;
+    font-weight: 700;
+    font-size: 2em;
+    margin:0px;
+    padding: 20px 30%;
+    text-align: left;
+}
+
+li > p {
+    padding-left: 20px;
+}
+
